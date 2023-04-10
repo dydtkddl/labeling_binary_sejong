@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Dialog</class>
+ <widget class="QDialog" name="Dialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>701</width>
+    <height>625</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <widget class="QWidget" name="verticalLayoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>20</y>
+     <width>321</width>
+     <height>441</height>
+    </rect>
+   </property>
+   <layout class="QVBoxLayout" name="train_status_layout">
+    <item>
+     <widget class="QLabel" name="status_load_file_label">
+      <property name="font">
+       <font>
+        <family>Arial</family>
+        <pointsize>14</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>파일 불러오기</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLabel" name="status_make_vocab_label">
+      <property name="font">
+       <font>
+        <family>Arial</family>
+        <pointsize>14</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>단어 사전 만들기</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLabel" name="status_vectorize_label">
+      <property name="font">
+       <font>
+        <family>Arial</family>
+        <pointsize>14</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>데이터 벡터화 하기</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLabel" name="status_make_model_label">
+      <property name="font">
+       <font>
+        <family>Arial</family>
+        <pointsize>14</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>모델 생성 및 설정</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLabel" name="status_train_label">
+      <property name="font">
+       <font>
+        <family>Arial</family>
+        <pointsize>14</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>모델 학습 시키기</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QWidget" name="verticalLayoutWidget_2">
+   <property name="geometry">
+    <rect>
+     <x>369</x>
+     <y>20</y>
+     <width>291</width>
+     <height>441</height>
+    </rect>
+   </property>
+   <layout class="QVBoxLayout" name="process_train_layout">
+    <item>
+     <widget class="QLabel" name="process_train_label">
+      <property name="text">
+       <string>모델 학습 과정...</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QPushButton" name="re_train_button">
+   <property name="geometry">
+    <rect>
+     <x>270</x>
+     <y>530</y>
+     <width>181</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>15</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="text">
+    <string>이전 페이지로</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="go_to_inspect_button">
+   <property name="geometry">
+    <rect>
+     <x>480</x>
+     <y>530</y>
+     <width>191</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>13</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="text">
+    <string>라벨링 검수하기</string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

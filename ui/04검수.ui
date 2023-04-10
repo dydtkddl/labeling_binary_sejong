@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Dialog</class>
+ <widget class="QDialog" name="Dialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1045</width>
+    <height>923</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <widget class="QPushButton" name="oo_btn">
+   <property name="geometry">
+    <rect>
+     <x>60</x>
+     <y>50</y>
+     <width>221</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>one_one(real/pre)</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="oz_btn">
+   <property name="geometry">
+    <rect>
+     <x>300</x>
+     <y>50</y>
+     <width>221</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>one_zero(real/pre)</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="zo_btn">
+   <property name="geometry">
+    <rect>
+     <x>540</x>
+     <y>50</y>
+     <width>221</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>zero_one(real/pre)</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="zz_btn">
+   <property name="geometry">
+    <rect>
+     <x>770</x>
+     <y>50</y>
+     <width>221</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>zero_zero(real/pre)</string>
+   </property>
+  </widget>
+  <widget class="QTableWidget" name="oo_table">
+   <property name="geometry">
+    <rect>
+     <x>60</x>
+     <y>100</y>
+     <width>951</width>
+     <height>751</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="newlabel_save">
+   <property name="geometry">
+    <rect>
+     <x>770</x>
+     <y>860</y>
+     <width>211</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="text">
+    <string>수정내용 반영된 파일 저장</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="retrain_btn">
+   <property name="geometry">
+    <rect>
+     <x>490</x>
+     <y>860</y>
+     <width>261</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="text">
+    <string>지금 변경내용으로 바로 다시 학습시키기</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="filter_input">
+   <property name="geometry">
+    <rect>
+     <x>60</x>
+     <y>10</y>
+     <width>341</width>
+     <height>31</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="filter_input_btn">
+   <property name="geometry">
+    <rect>
+     <x>420</x>
+     <y>10</y>
+     <width>91</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>12</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="text">
+    <string>필터링</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="filter_count">
+   <property name="geometry">
+    <rect>
+     <x>520</x>
+     <y>10</y>
+     <width>101</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="next_btn">
+   <property name="geometry">
+    <rect>
+     <x>60</x>
+     <y>860</y>
+     <width>261</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>미라벨링데이터 예측해보기</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="save_model">
+   <property name="geometry">
+    <rect>
+     <x>340</x>
+     <y>860</y>
+     <width>141</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>15</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="text">
+    <string>모델저장</string>
+   </property>
+  </widget>
+  <widget class="QCheckBox" name="check_all">
+   <property name="geometry">
+    <rect>
+     <x>600</x>
+     <y>30</y>
+     <width>81</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

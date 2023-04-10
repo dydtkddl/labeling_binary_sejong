@@ -1,0 +1,683 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Dialog</class>
+ <widget class="QDialog" name="Dialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>818</width>
+    <height>567</height>
+   </rect>
+  </property>
+  <property name="font">
+   <font>
+    <pointsize>12</pointsize>
+   </font>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>250</x>
+     <y>490</y>
+     <width>411</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Arial</family>
+     <pointsize>12</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="text">
+    <string>위와 같은 설정으로 모델 학습 진행하겠습니다.</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="next_button_2">
+   <property name="geometry">
+    <rect>
+     <x>610</x>
+     <y>480</y>
+     <width>141</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>17</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="text">
+    <string>진행</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_2">
+   <property name="geometry">
+    <rect>
+     <x>50</x>
+     <y>30</y>
+     <width>351</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>25</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="text">
+    <string>전처리 설정</string>
+   </property>
+  </widget>
+  <widget class="QSpinBox" name="vocab_length_option">
+   <property name="geometry">
+    <rect>
+     <x>280</x>
+     <y>80</y>
+     <width>91</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>20</pointsize>
+    </font>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_3">
+   <property name="geometry">
+    <rect>
+     <x>80</x>
+     <y>80</y>
+     <width>181</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>15</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="text">
+    <string>단어사전 단어개수</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_4">
+   <property name="geometry">
+    <rect>
+     <x>80</x>
+     <y>110</y>
+     <width>141</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>15</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="text">
+    <string>IDF로그 밑</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_5">
+   <property name="geometry">
+    <rect>
+     <x>80</x>
+     <y>150</y>
+     <width>141</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>15</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="text">
+    <string>TF로그 밑</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_6">
+   <property name="geometry">
+    <rect>
+     <x>70</x>
+     <y>240</y>
+     <width>56</width>
+     <height>12</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_7">
+   <property name="geometry">
+    <rect>
+     <x>50</x>
+     <y>220</y>
+     <width>351</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>25</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="text">
+    <string>모델 설정</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_8">
+   <property name="geometry">
+    <rect>
+     <x>80</x>
+     <y>270</y>
+     <width>181</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>20</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="text">
+    <string>은닉층</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_9">
+   <property name="geometry">
+    <rect>
+     <x>450</x>
+     <y>270</y>
+     <width>181</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>20</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="text">
+    <string>출력층</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_10">
+   <property name="geometry">
+    <rect>
+     <x>190</x>
+     <y>310</y>
+     <width>121</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="text">
+    <string>Dense01</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_11">
+   <property name="geometry">
+    <rect>
+     <x>190</x>
+     <y>380</y>
+     <width>121</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="text">
+    <string>Dense02</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_12">
+   <property name="geometry">
+    <rect>
+     <x>480</x>
+     <y>320</y>
+     <width>121</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="text">
+    <string>Dense_Out</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_13">
+   <property name="geometry">
+    <rect>
+     <x>190</x>
+     <y>270</y>
+     <width>181</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>12</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="text">
+    <string>DropOut</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_14">
+   <property name="geometry">
+    <rect>
+     <x>190</x>
+     <y>340</y>
+     <width>181</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>12</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="text">
+    <string>DropOut</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_15">
+   <property name="geometry">
+    <rect>
+     <x>190</x>
+     <y>410</y>
+     <width>181</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>12</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="text">
+    <string>DropOut</string>
+   </property>
+  </widget>
+  <widget class="QDoubleSpinBox" name="DropoutOption01">
+   <property name="geometry">
+    <rect>
+     <x>270</x>
+     <y>270</y>
+     <width>62</width>
+     <height>22</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QDoubleSpinBox" name="DropoutOption02">
+   <property name="geometry">
+    <rect>
+     <x>270</x>
+     <y>340</y>
+     <width>62</width>
+     <height>22</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QDoubleSpinBox" name="DropoutOption03">
+   <property name="geometry">
+    <rect>
+     <x>270</x>
+     <y>410</y>
+     <width>62</width>
+     <height>22</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QGroupBox" name="IDF_log">
+   <property name="geometry">
+    <rect>
+     <x>190</x>
+     <y>120</y>
+     <width>341</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="title">
+    <string/>
+   </property>
+   <widget class="QRadioButton" name="idf_log2">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>10</y>
+      <width>81</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>12</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>2</string>
+    </property>
+   </widget>
+   <widget class="QRadioButton" name="idf_loge">
+    <property name="geometry">
+     <rect>
+      <x>110</x>
+      <y>10</y>
+      <width>81</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>e</string>
+    </property>
+   </widget>
+   <widget class="QRadioButton" name="idf_log10">
+    <property name="geometry">
+     <rect>
+      <x>210</x>
+      <y>10</y>
+      <width>81</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>10</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QGroupBox" name="TF_log">
+   <property name="geometry">
+    <rect>
+     <x>190</x>
+     <y>160</y>
+     <width>341</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="title">
+    <string/>
+   </property>
+   <widget class="QRadioButton" name="tf_log2">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>10</y>
+      <width>81</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>12</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>2</string>
+    </property>
+   </widget>
+   <widget class="QRadioButton" name="tf_loge">
+    <property name="geometry">
+     <rect>
+      <x>110</x>
+      <y>10</y>
+      <width>81</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>e</string>
+    </property>
+   </widget>
+   <widget class="QRadioButton" name="tf_log10">
+    <property name="geometry">
+     <rect>
+      <x>210</x>
+      <y>10</y>
+      <width>81</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>10</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QGroupBox" name="Dense_option01">
+   <property name="geometry">
+    <rect>
+     <x>270</x>
+     <y>300</y>
+     <width>151</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="title">
+    <string/>
+   </property>
+   <widget class="QRadioButton" name="dense01_relu">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>10</y>
+      <width>81</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>relu</string>
+    </property>
+   </widget>
+   <widget class="QRadioButton" name="dense01_sigmoid">
+    <property name="geometry">
+     <rect>
+      <x>60</x>
+      <y>10</y>
+      <width>81</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>sigmoid</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QGroupBox" name="Dense_option02">
+   <property name="geometry">
+    <rect>
+     <x>270</x>
+     <y>370</y>
+     <width>151</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="title">
+    <string/>
+   </property>
+   <widget class="QRadioButton" name="dense02_relu">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>10</y>
+      <width>81</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>relu</string>
+    </property>
+   </widget>
+   <widget class="QRadioButton" name="dense02_sigmoid">
+    <property name="geometry">
+     <rect>
+      <x>60</x>
+      <y>10</y>
+      <width>81</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>sigmoid</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QGroupBox" name="Dense_option03">
+   <property name="geometry">
+    <rect>
+     <x>580</x>
+     <y>290</y>
+     <width>120</width>
+     <height>80</height>
+    </rect>
+   </property>
+   <property name="title">
+    <string/>
+   </property>
+   <widget class="QRadioButton" name="denseout_sigmoid">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>30</y>
+      <width>81</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>sigmoid</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QLabel" name="label_16">
+   <property name="geometry">
+    <rect>
+     <x>450</x>
+     <y>380</y>
+     <width>191</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>15</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="text">
+    <string>학습epochs</string>
+   </property>
+  </widget>
+  <widget class="QSpinBox" name="epochs">
+   <property name="geometry">
+    <rect>
+     <x>600</x>
+     <y>380</y>
+     <width>91</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>20</pointsize>
+    </font>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="load_model_btn">
+   <property name="geometry">
+    <rect>
+     <x>220</x>
+     <y>200</y>
+     <width>161</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>12</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="text">
+    <string>저장된 모델
+불러오기
+(바로진행)</string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

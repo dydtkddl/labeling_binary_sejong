@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>593</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>충녕봇 이진분류 라벨링 프로그램</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QPushButton" name="file_load_button">
+    <property name="geometry">
+     <rect>
+      <x>80</x>
+      <y>250</y>
+      <width>171</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>14</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+      <underline>true</underline>
+     </font>
+    </property>
+    <property name="text">
+     <string>파일불러오기</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="file_name_label">
+    <property name="geometry">
+     <rect>
+      <x>280</x>
+      <y>240</y>
+      <width>391</width>
+      <height>71</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>15</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>라벨링 파일을 불러와 주세요</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="next_button">
+    <property name="geometry">
+     <rect>
+      <x>70</x>
+      <y>350</y>
+      <width>621</width>
+      <height>81</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>HY엽서M</family>
+      <pointsize>26</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>진행</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="title_label">
+    <property name="geometry">
+     <rect>
+      <x>170</x>
+      <y>40</y>
+      <width>481</width>
+      <height>161</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Arial</family>
+      <pointsize>45</pointsize>
+      <weight>75</weight>
+      <italic>true</italic>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>충녕봇 이진분류 
+라벨링 프로그램!</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>800</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menu">
+    <property name="title">
+     <string>라벨링</string>
+    </property>
+   </widget>
+   <addaction name="menu"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="actiondata">
+   <property name="text">
+    <string>data</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
